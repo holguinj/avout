@@ -1,0 +1,19 @@
+Issue #10
+
+* The problem:
+** Watches are apparently proliferating madly when clients are disconnected and reconnect.
+** The original reporter says this:
+   If for whatever reason the ZK client drops a connnection and reconnects before the SESSION_EXPIRY is raised, the number of watchers managed by the client will double each time.
+   This is because Avout raises a watcher to manage the internal state of atoms and refs. I.e. see invalidateCache in avout.refs.
+   What should happen here is that each time the watcher is triggered, it should filter out events like {:event-type :None, :keeper-state :Disconnected}, perhaps by only ever being interested in event-type NodeDataChanged.
+   When these events get raised Avout currently registers brand new watchers even though the original watcher will still carry on firing. In ZK watchers are "fire-once" but not in the case of some events like the disconnect/connect.
+** I think I found the bug:
+   at https://github.com/liebke/avout/blob/master/src/avout/refs.clj#L99 (-ish)
+   `zk/exists` gets called /after/ `(when (= :NodeDataChanged (:event-type event))` returns, so it will add a new watch regardless of the :event-type. A fix might be as simple as moving the `zk/exists` call /into/ the `when` form.
+** Verifying:
+   This command gets some useful output out of ZK: `echo "mntr" | nc localhost 2181`
+   (thanks to https://gist.github.com/k9ert/3976972)
+   grep for zk_watch_count
+*** zk_watch_count starts at 0
+    duh? well, I had to make sure with a fresh data directory first.
+    it bounces around a lot during `lein test`, anywhere from 15 to 0 again
