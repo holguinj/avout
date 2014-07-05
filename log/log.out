@@ -1,0 +1,32 @@
+Client environment:zookeeper.version=3.4.0-1202560, built on 11/16/2011 07:18 GMT
+Client environment:host.name=192.168.0.8
+Client environment:java.version=1.8.0_05
+Client environment:java.vendor=Oracle Corporation
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre
+Client environment:java.class.path=/Users/justin/src/avout/test:/Users/justin/src/avout/src:/Users/justin/src/avout/dev-resources:/Users/justin/src/avout/resources:/Users/justin/src/avout/target/classes:/Users/justin/.m2/repository/clojure-complete/clojure-complete/0.2.3/clojure-complete-0.2.3.jar:/Users/justin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.0/zookeeper-3.4.0.jar:/Users/justin/.m2/repository/org/tcrawley/dynapath/0.2.3/dynapath-0.2.3.jar:/Users/justin/.m2/repository/org/jboss/netty/netty/3.2.2.Final/netty-3.2.2.Final.jar:/Users/justin/.m2/repository/org/clojure/tools.namespace/0.2.4/tools.namespace-0.2.4.jar:/Users/justin/.m2/repository/slamhound/slamhound/1.5.5/slamhound-1.5.5.jar:/Users/justin/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/justin/.m2/repository/zookeeper-clj/zookeeper-clj/0.9.3/zookeeper-clj-0.9.3.jar:/Users/justin/.m2/repository/cider/cider-nrepl/0.7.0-SNAPSHOT/cider-nrepl-0.7.0-SNAPSHOT.jar:/Users/justin/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar:/Users/justin/.m2/repository/org/clojure/java.classpath/0.2.0/java.classpath-0.2.0.jar:/Users/justin/.m2/repository/compliment/compliment/0.1.1/compliment-0.1.1.jar:/Users/justin/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/justin/.m2/repository/cljs-tooling/cljs-tooling/0.1.3-SNAPSHOT/cljs-tooling-0.1.3-SNAPSHOT.jar:/Users/justin/.m2/repository/org/clojure/tools.nrepl/0.2.3/tools.nrepl-0.2.3.jar:/Users/justin/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/justin/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/justin/.m2/repository/org/clojure/tools.trace/0.7.8/tools.trace-0.7.8.jar:/Users/justin/.m2/repository/org/clojure/tools.logging/0.3.0/tools.logging-0.3.0.jar:/Users/justin/.m2/repository/org/clojure/clojure/1.6.0/clojure-1.6.0.jar:/Users/justin/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar
+Client environment:java.library.path=/Users/justin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Client environment:java.io.tmpdir=/var/folders/vw/zs4pf5x516973qjll4dsmz8w0000gn/T/
+Client environment:java.compiler=<NA>
+Client environment:os.name=Mac OS X
+Client environment:os.arch=x86_64
+Client environment:os.version=10.9.3
+Client environment:user.name=justin
+Client environment:user.home=/Users/justin
+Client environment:user.dir=/Users/justin/src/avout
+Initiating client connection, connectString=localhost sessionTimeout=5000 watcher=zookeeper.internal$make_watcher$reify__3956@1811f519
+Opening socket connection to server /127.0.0.1:2181
+Socket connection established to localhost/127.0.0.1:2181, initiating session
+Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147058b94090032, negotiated timeout = 5000
+Initiating client connection, connectString=localhost sessionTimeout=5000 watcher=zookeeper.internal$make_watcher$reify__3956@611a7181
+Opening socket connection to server /0:0:0:0:0:0:0:1:2181
+Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x147058b94090033, negotiated timeout = 5000
+Initiating client connection, connectString=localhost sessionTimeout=5000 watcher=zookeeper.internal$make_watcher$reify__3956@5266745a
+Opening socket connection to server /fe80:0:0:0:0:0:0:1%1:2181
+Socket connection established to fe80:0:0:0:0:0:0:1%1/fe80:0:0:0:0:0:0:1%1:2181, initiating session
+Session establishment complete on server fe80:0:0:0:0:0:0:1%1/fe80:0:0:0:0:0:0:1%1:2181, sessionid = 0x147058b94090034, negotiated timeout = 5000
+Initiating client connection, connectString=localhost sessionTimeout=5000 watcher=zookeeper.internal$make_watcher$reify__3956@795b0c48
+Opening socket connection to server /fe80:0:0:0:0:0:0:1%1:2181
+Socket connection established to fe80:0:0:0:0:0:0:1%1/fe80:0:0:0:0:0:0:1%1:2181, initiating session
+Session establishment complete on server fe80:0:0:0:0:0:0:1%1/fe80:0:0:0:0:0:0:1%1:2181, sessionid = 0x147058b94090035, negotiated timeout = 5000
+Sadness

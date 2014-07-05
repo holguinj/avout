@@ -6,6 +6,7 @@
             [avout.locks :as locks]
             [avout.client-handle :as handle]
             [zookeeper :as zk]
+            [clojure.tools.logging :as log]
             avout.refs.zk
             avout.refs.local
             avout.atoms.zk))
@@ -35,6 +36,7 @@
                            value
                            (apply handle/make-zookeeper-client-handle args))]
        (when-not (zk/exists (.getClient client-handle) cfg/*stm-node*)
+         (log/info "Connecting to ZooKeeper server with:" (clojure.string/join ", " args))
          (init-stm client-handle))
        client-handle)))
 
